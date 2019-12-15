@@ -1,4 +1,6 @@
-﻿Public Class FormLogin
+﻿Imports System.Data.SqlClient
+
+Public Class FormLogin
 	Private Sub ButtonCancel_Click(sender As Object, e As EventArgs) Handles ButtonCancel.Click
 		Me.Close()
 
@@ -34,6 +36,25 @@
 				Me.Show()
 			Else
 				Me.Close()
+			End If
+		Else
+			Call Koneksi()
+			Cmd = New SqlCommand("SELECT * FROM AdminProyek WHERE NamaAdmin='" & TextBoxUserName.Text & "' and PasswordAdmin='" & TextBoxPassword.Text & "' ", Conn)
+			Dr = Cmd.ExecuteReader
+			Dr.Read()
+			If Dr.HasRows Then
+				FormAdmin.Show()
+			Else
+				Call Koneksi()
+				Cmd = New SqlCommand("SELECT * FROM Customer Where NamaUser='" & TextBoxUserName.Text & "' and PasswordUser='" & TextBoxPassword.Text & "' ", Conn)
+				Dr = Cmd.ExecuteReader
+				Dr.Read()
+				If Dr.HasRows Then
+					FormUser.Show()
+				Else
+					MsgBox("Maaf User Tidak Ditemukan")
+
+				End If
 			End If
 
 

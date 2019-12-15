@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formcobakonekgagithubamalokal.Designer.vb">
-      <DependentUpon>Formcobakonekgagithubamalokal.vb</DependentUpon>
+    <Compile Include="FormAdmin.Designer.vb">
+      <DependentUpon>FormAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formcobakonekgagithubamalokal.vb">
+    <Compile Include="FormAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.vb">
@@ -84,6 +84,12 @@
     </Compile>
     <Compile Include="FormLogin.Designer.vb">
       <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser.Designer.vb">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModuleKoneksi.vb" />
