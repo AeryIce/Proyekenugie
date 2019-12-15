@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formcoba.Designer.vb">
-      <DependentUpon>Formcoba.vb</DependentUpon>
+    <Compile Include="Formcobakonekgagithubamalokal.Designer.vb">
+      <DependentUpon>Formcobakonekgagithubamalokal.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formcoba.vb">
+    <Compile Include="Formcobakonekgagithubamalokal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.vb">
