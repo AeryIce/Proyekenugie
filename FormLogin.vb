@@ -44,6 +44,7 @@ Public Class FormLogin
 			Dr.Read()
 			If Dr.HasRows Then
 				FormAdmin.Show()
+				Me.Visible = False
 			Else
 				Call Koneksi()
 				Cmd = New SqlCommand("SELECT * FROM Customer Where NamaUser='" & TextBoxUserName.Text & "' and PasswordUser='" & TextBoxPassword.Text & "' ", Conn)
@@ -51,8 +52,12 @@ Public Class FormLogin
 				Dr.Read()
 				If Dr.HasRows Then
 					FormUser.Show()
+					Me.Visible = False
 				Else
 					MsgBox("Maaf User Tidak Ditemukan")
+					TextBoxUserName.Clear()
+					TextBoxPassword.Clear()
+					TextBoxUserName.Focus()
 
 				End If
 			End If

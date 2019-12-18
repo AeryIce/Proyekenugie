@@ -79,10 +79,10 @@
     <Compile Include="FormAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormInputAdmin.Designer.vb">
-      <DependentUpon>FormInputAdmin.vb</DependentUpon>
+    <Compile Include="FormCRUDAdmin.Designer.vb">
+      <DependentUpon>FormCRUDAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormInputAdmin.vb">
+    <Compile Include="FormCRUDAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.vb">
@@ -116,6 +116,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUDAdmin.resx">
+      <DependentUpon>FormCRUDAdmin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
