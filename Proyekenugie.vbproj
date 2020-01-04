@@ -92,6 +92,12 @@
       <DependentUpon>FormLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormTransaksi.Designer.vb">
+      <DependentUpon>FormTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormUser.Designer.vb">
       <DependentUpon>FormUser.vb</DependentUpon>
     </Compile>
